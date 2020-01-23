@@ -1,0 +1,13 @@
+.linkToLogin {
+  margin-top: 15px;
+  text-align: center;
+  & > a {
+    color:#fd5068;
+  }
+}
+
+.field_with_errors {
+  input[type=file] {
+    display: none;
+  }
+}

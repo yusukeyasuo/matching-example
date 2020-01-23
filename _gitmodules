@@ -1,0 +1,3 @@
+[submodule "curriculum-template"]
+	path = curriculum-template
+	url = git@github.com:Techpit-Market/curriculum-template.git

@@ -1,0 +1,12 @@
+{
+  "name": "techpit-match",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "postinstall": "npm run update:submodule",
+    "postupdate": "npm run update:submodule",
+    "update:submodule": "git submodule update --init && git submodule foreach git pull origin master && cd curriculum-template && npm install",
+    "check": "cd curriculum-template && npm run check",
+    "check:fix": "cd curriculum-template && npm run check:fix"
+  }
+}
