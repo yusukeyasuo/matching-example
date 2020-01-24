@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def index
-    @users = User.where.not(id: current_user.id)
+    @user = User.where.not(id: current_user.id).sample
   end
 
   private
