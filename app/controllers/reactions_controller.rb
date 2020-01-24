@@ -4,5 +4,6 @@ class ReactionsController < ApplicationController
     reaction.update_attributes(
       status: params[:reaction]
     )
+    redirect_to users_path
   end
 end
